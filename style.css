@@ -1,0 +1,113 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    outline: none;
+    text-transform: capitalize;
+    border: none;
+    transition: all .2s linear;
+}
+
+:root {
+    --orange: #1b037a;
+}
+
+::selection {
+    background: var(--orange);
+    color: aliceblue;
+}
+
+html {
+    font-size: 60.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-around;
+    background: #7b74dd;
+    z-index: 1000;
+    padding: 2rem 9%;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: aliceblue;
+    text-transform: uppercase;
+
+}
+
+header .logo span {
+    color: var(--orange);
+}
+
+header .navbar a {
+    color: aliceblue;
+    font-size: 2rem;
+    margin: 0 .8rem;
+}
+
+
+header .navbar a:hover {
+
+    color: var(--orange);
+}
+
+
+header .icons i {
+    color: aliceblue;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover {
+    color: var(--orange);
+}
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: #7b74dd;
+    border-top: .1rem solid aliceblue;
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+
+header .search-bar-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar {
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #7b74dd;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+
+header .search-bar-container label {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+    color: var(--orange);
+}
