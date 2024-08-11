@@ -111,3 +111,76 @@ header .search-bar-container label {
 header .search-bar-container label:hover {
     color: var(--orange);
 }
+
+
+/* login here */
+
+.login-form-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background:#7b74dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container form{
+    margin: .2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: #fcfcfc;
+    width: 50rem;
+}
+
+.login-form-container form h3{
+    font-size: 3rem;
+    color: #1b037a;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #1b037a;
+    margin: .6rem 0;
+    border: .1rem solid black;
+    text-transform: none;
+}
+
+
+.login-form-container form .box:focus{
+    border-color: var(--orange);
+}
+
+.login-form-container form #remember{
+    margin: 2rem 0;
+}
+
+.login-form-container form label{
+    font-size: 1.5rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--orange);
+    color: #f1f0f5;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--orange);
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover{
+    color: rgb(15, 14, 14);
+    background-color: #a19cf0;
+    font-size: 16px;
+    border-radius: 2px;
+}
