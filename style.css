@@ -186,9 +186,9 @@ header .search-bar-container label:hover {
 }
 
 .btn:hover {
-    color: rgb(15, 14, 14);
-    background-color: #a19cf0;
-    font-size: 16px;
+    color: rgb(253, 251, 251);
+    background-color: #0f05a4;
+
     border-radius: 2px;
 }
 
@@ -199,8 +199,8 @@ header .search-bar-container label:hover {
 
 .login-form-container form p {
     padding: .5rem 0;
-    font-size: 1.5rem;
-    color: #1b037a;
+    font-size: 1.6rem;
+    color: #060606;
 }
 
 .login-form-container form p a {
@@ -234,6 +234,8 @@ header .search-bar-container label:hover {
     cursor: pointer;
     display: none;
 }
+
+
 
 
 
