@@ -192,7 +192,7 @@ header .search-bar-container label:hover {
 .btn:hover {
     color: rgb(253, 251, 251);
     background-color: #0f05a4;
-
+text-align: center;
     border-radius: 2px;
 }
 
@@ -254,6 +254,10 @@ header .search-bar-container label:hover {
 }
 
 
+.home .content{
+    text-align: center;
+}
+
 .home .content h3{
 
     font-size: 4.5rem;
@@ -266,6 +270,12 @@ header .search-bar-container label:hover {
     font-size: 2.5rem;
     color: #fcfcfc;
     padding: .5rem 0;
+
+}
+
+
+.home .video-container video{
+
 }
 
 
