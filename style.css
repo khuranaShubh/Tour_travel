@@ -25,7 +25,7 @@ html {
     scroll-behavior: smooth;
 }
 
-section{
+section {
     padding: 2rem 9%;
 }
 
@@ -127,8 +127,7 @@ header .search-bar-container label:hover {
     z-index: 10000;
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(118, 99, 228);
-    opacity: 0.7;
+    background-color: white opacity: 0.7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,8 +137,10 @@ header .search-bar-container label:hover {
     margin: .2rem;
     padding: 1.5rem 2rem;
     border-radius: .5rem;
-    background: #fcfcfc;
-    width: 50rem;
+    background-color: #fcfcfc;
+    align-items: center;
+    justify-content: center;
+    width: 80rem;
 }
 
 .login-form-container.active {
@@ -182,17 +183,18 @@ header .search-bar-container label:hover {
     display: inline-block;
     margin-top: 1rem;
     background: var(--orange);
-    color: #f1f0f5;
+    color: #ffffff;
     padding: .8rem 3rem;
     border: .2rem solid var(--orange);
     cursor: pointer;
     border: none;
+    font-size: 14px;
 }
 
 .btn:hover {
     color: rgb(253, 251, 251);
-    background-color: #0f05a4;
-text-align: center;
+    background-color: #181165;
+    text-align: center;
     border-radius: 2px;
 }
 
@@ -208,7 +210,7 @@ text-align: center;
 }
 
 .login-form-container form p a {
-    color: #7655f8;
+    color: #b0afb4;
 }
 
 .login-form-container form p a:hover {
@@ -243,7 +245,7 @@ text-align: center;
 
 /*home section */
 
-.home{
+.home {
     display: flex;
     min-height: 100vh;
     align-items: center;
@@ -254,19 +256,19 @@ text-align: center;
 }
 
 
-.home .content{
+.home .content {
     text-align: center;
 }
 
-.home .content h3{
+.home .content h3 {
 
     font-size: 4.5rem;
     color: white;
     text-transform: uppercase;
-    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .1);
 }
 
-.home .content p{
+.home .content p {
     font-size: 2.5rem;
     color: #fcfcfc;
     padding: .5rem 0;
@@ -274,11 +276,135 @@ text-align: center;
 }
 
 
-.home .video-container video{
+.home .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
 }
 
 
+.home .controls {
+    padding: 1rem;
+    border-radius: 5rem;
+    background: #d4d4d9;
+    position: relative;
+    top: 10rem;
+}
+
+
+.home .controls .vid-btn {
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #0d0d99;
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+
+.home .controls .vid-btn.active {
+    background: var(--orange);
+}
+
+/* booking */
+
+.book .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.book .row .image {
+    flex: 1 1 40rem;
+}
+
+.book .row .image img {
+    width: 100%;
+}
+
+
+.book .row form {
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+
+.book .row .inputBox {
+    padding: .5rem 0;
+}
+
+
+.book .row form .inputBox input {
+    width: 100%;
+    padding: 1rem;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    color: #060606;
+    text-transform: none;
+}
+
+.book .row form .inputBox h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #0d0d99;
+}
+
+/* packages section */
+
+.packages .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.packages .box-container .box {
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+.packages .box-container .img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.packages .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #060606;
+}
+
+
+.packages .box-container .box .content h3 i {
+
+    color: var(--orange);
+}
+
+
+
+
+.heading {
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span {
+    font-size: 3.5rem;
+    background: rgb(125, 199, 238);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+.heading span .space {
+    background: none;
+}
 
 
 
@@ -317,6 +443,7 @@ text-align: center;
         padding: 2rem;
     }
 }
+
 @media (max-width: 768px) {
     #menu-bar {
         display: initial;
@@ -348,3 +475,12 @@ text-align: center;
 }
 
 
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .heading span {
+        font-size: 2.5rem;
+    }
+}
